@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The 13-Month Sol Calendar Calcuator</title>
+    </head>
+    <body>
+        <h1>The 13-Month Sol Calendar Calcuator</h1>
+        <p>
+            The 13-month calendar is an idea for calendar reform. The gregorian calendar suffers some problems. One of them is the uneven number of months. If we calculate how many weeks should be in a month we get 365/12≈30.4. This forces us to have uneven months.<br>
+            But what if there were 13 months? Then there should be on average 365/13≈28.08 days in a month! This is a very nice number. Every month can be exactly four weeks long (with no change of the week days between months of the same year) and we are left only with one or two additional days.<br>
+            This converter uses the version of the 13-month calendar is called the Sol Calendar by Jim Eikner. Every month has 28 days, except for December which has 29 or 30 days, depending whether it's a leap year. An additional month, called Sol is placed bewteen June and July (to minimise the seasonal drift of existing months). The 7-day week cycle is not disrupted, for the cost of the same days of the calendar usually being different week days in different years.<br>
+            The calculator does not address the fact that mondern gregorian calendar rules were not always followed historically and does not correct for the leap year rules that can make the calendar out-of-sync with the year cycle in the far future. There are no leap years between -4 and 4.
+        </p>
+        <table>
+            <tr><td><span>Gregorian calendar: </span></td>
+            <td><input id="gregorian_day" type="number" placeholder="Day" min=1 max=31></td>
+            <td><input id="gregorian_month" type="number" placeholder="Month" min=1 max=12></td>
+            <td><input id="gregorian_year" type="number" placeholder="Year"></td>
+            <td><span id="gregorian_span"></span></td></tr>
+            <tr><td><span>Sol calendar: </span></td>
+            <td><input id="sol_day" type="number" placeholder="Day" min=1 max=30></td>
+            <td><input id="sol_month" type="number" placeholder="Month" min=1 max=13></td>
+            <td><input id="sol_year" type="number" placeholder="Year"></td>
+            <td><span id="sol_span"></span></td></tr>
+        </table>
+    </body>
+    <script src="main.js"></script>
+</html>
